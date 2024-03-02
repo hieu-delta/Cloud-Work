@@ -1,0 +1,7 @@
+    String modify (String name){
+        name = name.trim().toUpperCase();
+        String temp[] = name.split("\\s+"), tmp="";
+        for (String i : temp)
+            tmp += i.charAt(0) + i.substring(1).toLowerCase() + " ";
+        return tmp.trim();
+    }
