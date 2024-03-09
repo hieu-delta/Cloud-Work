@@ -1,2 +1,2 @@
-s = "123456"
-print(s[-1:]) 
+s = "abvhdkcd"
+print("".join(sorted(s)))
