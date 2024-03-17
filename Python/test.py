@@ -1,2 +1,3 @@
-s = "abvhdkcd"
-print("".join(sorted(s)))
+for t in range(int(input())):
+    n = int(input())
+    

@@ -1,5 +1,13 @@
+def check(s):
+    if (len(s) < 2):
+        return "NO"
+    for i in range(2,len(s)):
+        if (s[i] != s[i-2]):
+            return "NO"
+    for i in range(3,len(s)):
+        if (s[i] != s[i-2]):
+            return "NO"
+    return "YES"
 for t in range(int(input())):
     s = input()
-    s1 = str([s[x] for x in range(len(s)) if (x%2==0)])
-    s2 = str([s[x] for x in range(len(s)) if (x%2!=0)])
-    print(s1,s2)
+    print(check(s))
